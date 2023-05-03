@@ -1,0 +1,52 @@
+body{color: gold;}
+.group_1{color: darkcyan;}
+#listaU{color: darkgoldenrod;}
+#item1{color: antiquewhite;}
+#item2{color: brown;}
+#item3{color: chartreuse;}
+#item4{color:aqua;}
+.link1{text-decoration: overline;}
+.link2{text-decoration: none;}
+.link3{text-decoration: line-through;}
+.link4{text-decoration: underline line-through;}
+.link5{text-decoration: underline;}
+.tablaC{color: black; font-family: 'Courier New', Courier, monospace;}
+.color_1-1{background-color: rgb(255, 0, 0);}
+.color_1-2{background-color: rgb(255, 70, 0);}
+.color_1-3{background-color: rgb(255, 128, 0);}
+.color_1-4{background-color: rgb(255, 192, 0);}
+
+.color_2-1{background-color: rgb(255, 255, 237);}
+.color_2-2{background-color: rgb(191, 70, 0);}
+.color_2-3{background-color: rgb(128, 0, 0);}
+.color_2-4{background-color: rgb(67, 107, 29);}
+
+p{
+    background-color: black;
+    margin: 25px 50px;
+    text-align: center;
+    text-indent: 50px;
+    line-height: 2;
+}
+#parrafoEspecial {
+    background-color: darkblue;
+    color: white;
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: 'Mr Dafoe', cursive;
+}
+#miCuadro {
+    border: 5px solid black;
+}
+th,td {
+    border: 1px dotted grey;
+}
+.alterno {
+    background-color: gray;
+}
+th:hover,td:hover {
+    color: rgb(0, 0, 0);
+    background-color: darkslategray;
+    text-transform: uppercase;
+    color: black;
+}

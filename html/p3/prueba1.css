@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(0, 0, 0, 0.837);
+}
+
+div{
+    text-align: center; font-family: 'Times New Roman', Times, serif; background-color: rgb(124, 127, 236);
+}
+
+.div2{
+    text-align: left; font-family: 'Courier New', Courier, monospace; 
+}
+
+img{
+    align-items: center;
+    align-content: center;
+}
+
+section{
+    display: flex;
+    width: 800px;
+    height: 500px;
+}
+
+section img{
+    width: 1px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .7;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor: pointer;
+    width: 600px;
+    opacity: 1;
+    filter: contrast(120%);
+}
