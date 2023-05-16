@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Rocha Medina Luis Alfonso
+    Materia: Progra Web 1
+    Fecha: 08/Marzo/2023
+    Descripcion: Etquetas para formularios
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 02 - Ejercicio 2</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Luis Alfonso Rocha">
+        <meta name="revised" content="Miercoles 8 de Marzo del 2023">
+        <meta name="Descripcion" content="form, button, input, select, option, datalist, textarea, progress, password, text, radio, hidden, time, month, week, range, reset, password, file, color, datetime, number">
+    </head>
+    <body>
+        <hgroup>
+            <h1>Formulario Web</h1>
+            <form>
+                <p>Fomulario <br>Web Html5</p>
+                <label>Etiqueta (label)</label>
+                <br><label>Control (boton): </label><button>Nigga</button>
+                <br><label>Control (Imput: Texto): </label><input type="text">
+                <br><label>Control (Imput: Contraseña): </label><input type="password">
+                <br><label>Control (Imput: Oculto): </label><input type="hidden">
+                <br><label>Control (Imput: Radio): </label><input type="radio">
+                <br><label>Control (Imput: Verificacion): </label><input type="checkbox">
+                <br><label>Control (Imput: Archivo): </label><input type="file">
+                <br><label>Control (Imput: Boton): </label><input type="button" value="Otro Boton">
+                <br><label>Control (Imput: Color): </label><input type="color">
+                <br><label>Control (Imput: Fecha): </label><input type="date">
+                <br><label>Control (Imput: Hora): </label><input type="time">
+                <br><label>Control (Imput: Fecha y Hora): </label><input type="datetime">
+                <br><label>Control (Imput: Semanal): </label><input type="week">
+                <br><label>Control (Imput: Mensual): </label><input type="month">
+                <br><label>Control (Imput: Numerico): </label><input type="number">
+                <br><label>Control (Imput: Rangos): </label><input type="range">
+                <br><label>Control (Imput: Restablecer): </label><input type="reset">
+                <br><label>Control (Imput: Enviar): </label><input type="submit">
+                <br><label>(Imput: Selector):</label>
+                <select>
+                    <option>Verdadero</option>
+                    <option>Falso</option>
+                </select>
+                <br><label>Control (Input: Lista de datos):</label><input list="Valores">
+                <datalist id="Valores">
+                    <option value="Verdadero"></option>
+                    <option value="Falso"></option>
+                </datalist>
+                <br><label>Control (Input: Combox)</label><input list="ListaValores">
+                <datalist id="ListaValores">
+                    <option value="Verdadero">
+                    </option>
+                    <option value="Falso"></option>
+                </datalist>
+                <br><label>Control (Caja de texto): </label><textarea></textarea>
+                <br><label>Control (Barra de progreso): </label><progress></progress>
+                <br><label>Control (Barra de progreso 0%): </label><progress min="0" max="100" value="0"></progress>
+                <br><label>Control (Barra de progreso 25%): </label><progress min="0" max="100" value="25"></progress>
+                <br><label>Control (Barra de progreso 50%): </label><progress min="0" max="100" value="50"></progress>
+                <br><label>Control (Barra de progreso 75%): </label><progress min="0" max="100" value="75"></progress>
+                <br><label>Control (Barra de progreso 100%): </label><progress min="0" max="100" value="100"></progress>
+            </form>
+        </hgroup>
+        <hgroup>
+            <h3>Ejemplo de uso</h3>
+            <form>
+                <p>Radio burron sencillo</p>
+                <label>1.- Se puede decir que HTML es un lenguaje sencillo?</label>
+                <br><input type="radio" name="reactivo_1">Verdadero 
+                <br><input type="radio" name="reactivo_1">Falso
+                <p>Radio burron sencillo</p>
+                <label>1.1.- Se puede decir que HTML es un lenguaje sencillo?</label>
+                <select>
+                    <option>--Seleccione--</option>
+                    <option>a)Verdadero</option>
+                    <option>b)Falso</option>
+                </select>
+                <!--<br><input type="radio" name="reactivo_1">Verdadero 
+                <br><input type="radio" name="reactivo_1">Falso-->
+                <p>Radio button multiple</p>
+                <br><label>2.- Son las siglas de Hypertext Markup Language</label>
+                <br><input type="checkbox">Js
+                <br><input type="checkbox">CSS
+                <br><input type="checkbox">HTML
+                <br><input type="checkbox">PHP
+                <br><input type="checkbox">SQL
+                <p>checkbox multiple</p>
+                <p>Radio button multiple</p>
+                <br><label>2.2.- Son las siglas de Hypertext Markup Language</label>
+                <select>
+                    <option>--Elegir una--</option>
+                    <option>1) JS</option>
+                    <option>2) CSS</option>
+                    <option>3) HTML</option>
+                    <option>4) PHP</option>
+                    <option>5) SQL</option>
+                </select>
+                <!--<br><input type="checkbox">Js
+                <br><input type="checkbox">CSS
+                <br><input type="checkbox">HTML
+                <br><input type="checkbox">PHP
+                <br><input type="checkbox">SQL-->
+                <p>checkbox multiple</p>
+                <label>3.- Son las tecnologias estudiadas en progra web 1</label>
+                <br><input type="checkbox">Js
+                <br><input type="checkbox">CSS
+                <br><input type="checkbox">HTML
+                <br><input type="checkbox">PHP
+                <br><input type="checkbox">SQL
+                <p>Terminos y condiciones</p>
+                <label>Estas de acuerdo en aceptar todos los termino?</label>
+                <input type="radio" name="term_cond">Aceptar<input type="radio" name="term_cond">Rechazar
+                <p>Campos de un Formulario</p>
+                <label>Telefono: </label><input type="text">
+                <br><label>Codigo Postal: </label><input type="text">
+                <p>Estados de la republica</p>
+                <label>Elegir un estado:</label><input list="Estados">
+                <datalist id="Estados">
+                    <option value="Aguascalientes">
+                        <option value="Baja California">
+                        <option value="Baja California Sur">
+                        <option value="Campeche">
+                        <option value="Chiapas">
+                        <option value="Chihuahua">
+                        <option value="Coahuila de Zaragoza">
+                        <option value="Colima">
+                        <option value="Durango">
+                        <option value="Estado de México">
+                        <option value="Guanajuato">
+                        <option value="Guerrero">
+                        <option value="Hidalgo">
+                        <option value="Jalisco">
+                        <option value="Michoacán de Ocampo">
+                        <option value="Morelos">
+                        <option value="Nayarit">
+                        <option value="Nuevo León">
+                        <option value="Oaxaca">
+                        <option value="Puebla">
+                        <option value="Querétaro">
+                        <option value="Quintana Roo">
+                        <option value="San Luis Potosí">
+                        <option value="Sinaloa">
+                        <option value="Sonora">
+                        <option value="Tabasco">
+                        <option value="Tamaulipas">
+                        <option value="Tlaxcala">
+                        <option value="Veracruz de Ignacio de la Llave">
+                        <option value="Yucatán">
+                        <option value="Zacatecas">
+                </datalist>
+                <br><label>Alternativa No.2 Para Elegir un estado: </label>
+                <select>
+                    <option>--Seleccione--</option>
+                    <option>Aguascalientes</option>
+                    <option>Baja California"</option>
+                    <option>California Sur</option>
+                    <option>Campeche</option>
+                    <option>Chiapas</option>
+                    <option>Chiguaga</option>
+                    <option>Coahuila de Zaragoza</option>
+                    <option>Colima</option>
+                    <option>Durango</option>
+                    <option>Estado de México</option>
+                    <option>Guanajuato</option>
+                    <option>Guerrero</option>
+                    <option>Hidalgo</option>
+                    <option>Jalisco</option>
+                    <option>Michoacán de Ocampo</option>
+                    <option>Morelos</option>
+                    <option>Nayarit</option>
+                    <option>Nuevo León</option>
+                    <option>Oaxaca</option>
+                    <option>Puebla</option>
+                    <option>Querétaro</option>
+                    <option>Quintana Roo</option>
+                    <option>San Luis Potosí</option>
+                    <option>Sinaloa</option>
+                    <option>Sonora</option>
+                    <option>Tabasco</option>
+                    <option>Tamaulipas</option>
+                    <option>Tlaxcala</option>
+                    <option>Veracruz de Ignacio de la Llave</option>
+                    <option>Yucatán</option>
+                    <option>Zacatecas</option>
+                </select>
+            <p>Listado de municipios del estado de San Luis Potosí</p><input list="SLP">
+            <datalist id="SLP">
+                <option value='Ahualulco'>
+                    <option value='Alaquines'>
+                    <option value='Aquismón'>
+                    <option value='Armadillo de los Infante'>
+                    <option value='Cárdenas'>
+                    <option value='Catorce'>
+                    <option value='Cedral'>
+                    <option value='Cerritos'>
+                    <option value='Cerro de San Pedro'>
+                    <option value='Ciudad del Maíz'>
+                    <option value='Ciudad Fernández'>
+                    <option value='Tancanhuitz'>
+                    <option value='Ciudad Valles'>
+                    <option value='Coxcatlán'>
+                    <option value='Charcas'>
+                    <option value='Ebano'>
+                    <option value='Guadalcázar'>
+                    <option value='Huehuetlán'>
+                    <option value='Lagunillas'>
+                    <option value='Matehuala'>
+                    <option value='Mexquitic de Carmona'>
+                    <option value='Moctezuma'>
+                    <option value='Rayón'>
+                    <option value='Rioverde'>
+                    <option value='Salinas'>
+                    <option value='San Antonio'>
+                    <option value='San Ciro de Acosta'>
+                    <option value='San Luis Potosí'>
+                    <option value='San Martín Chalchicuautla'>
+                    <option value='San Nicolás Tolentino'>
+                    <option value='Santa Catarina'>
+                    <option value='Santa María del Río'>
+                    <option value='Santo Domingo'>
+                    <option value='San Vicente Tancuayalab'>
+                    <option value='Soledad de Graciano Sánchez'>
+                    <option value='Tamasopo'>
+                    <option value='Tamazunchale'>
+                    <option value='Tampacán'>
+                    <option value='Tampamolón Corona'>
+                    <option value='Tamuín'>
+                    <option value='Tanlajás'>
+                    <option value='Tanquián de Escobedo'>
+                    <option value='Tierra Nueva'>
+                    <option value='Vanegas'>
+                    <option value='Venado'>
+                    <option value='Villa de Arriaga'>
+                    <option value='Villa de Guadalupe'>
+                    <option value='Villa de la Paz'>
+                    <option value='Villa de Ramos'>
+                    <option value='Villa de Reyes'>
+                    <option value='Villa Hidalgo'>
+                    <option value='Villa Juárez'>
+                    <option value='Axtla de Terrazas'>
+                    <option value='Xilitla'>
+                    <option value='Zaragoza'>
+                    <option value='Villa de Arista'>
+                    <option value='Matlapa'>
+                    <option value='El Naranjo'>
+            </datalist>
+            <br><p>Listado de municipios del estado de San Luis Potosí (select)</p>
+            <select>
+                <option>--Seleccione--</option>
+                <option>'Ahualulco'</option>
+                    <option>'Alaquines'</option>
+                    <option>'Aquismón'</option>
+                    <option>'Armadillo de los Infante'</option>
+                    <option>'Cárdenas'</option>
+                    <option>'Catorce'</option>
+                    <option>'Cedral'</option>
+                    <option>'Cerritos'</option>
+                    <option>'Cerro de San Pedro'</option>
+                    <option>'Ciudad del Maíz'</option>
+                    <option>'Ciudad Fernández'</option>
+                    <option>'Tancanhuitz'</option>
+                    <option>'Ciudad Valles'</option>
+                    <option>'Coxcatlán'</option>
+                    <option>'Charcas'</option>
+                    <option>'Ebano'</option>
+                    <option>'Guadalcázar'</option>
+                    <option>'Huehuetlán'</option>
+                    <option>'Lagunillas'</option>
+                    <option>'Matehuala'</option>
+                    <option>'Mexquitic de Carmona'</option>
+                    <option>'Moctezuma'</option>
+                    <option>'Rayón'</option>
+                    <option>'Rioverde'</option>
+                    <option>'Salinas'</option>
+                    <option>'San Antonio'</option>
+                    <option>'San Ciro de Acosta'</option>
+                    <option>'San Luis Potosí'</option>
+                    <option>'San Martín Chalchicuautla'</option>
+                    <option>'San Nicolás Tolentino'</option>
+                    <option>'Santa Catarina'</option>
+                    <option>'Santa María del Río'</option>
+                    <option>'Santo Domingo'</option>
+                    <option>'San Vicente Tancuayalab'</option>
+                    <option>'Soledad de Graciano Sánchez'</option>
+                    <option>'Tamasopo'</option>
+                    <option>'Tamazunchale'</option>
+                    <option>'Tampacán'</option>
+                    <option>'Tampamolón Corona'</option>
+                    <option>'Tamuín'</option>
+                    <option>'Tanlajás'</option>
+                    <option>'Tanquián de Escobedo'</option>
+                    <option>'Tierra Nueva'</option>
+                    <option>'Vanegas'</option>
+                    <option>'Venado'</option>
+                    <option>'Villa de Arriaga'</option>
+                    <option>'Villa de Guadalupe'</option>
+                    <option>'Villa de la Paz'</option>
+                    <option>'Villa de Ramos'</option>
+                    <option>'Villa de Reyes'</option>
+                    <option>'Villa Hidalgo'</option>
+                    <option>'Villa Juárez'</option>
+                    <option>'Axtla de Terrazas'</option>
+                    <option>'Xilitla'</option>
+                    <option>'Zaragoza'</option>
+                    <option>'Villa de Arista'</option>
+                    <option>'Matlapa'</option>
+                    <option>'El Naranjo'</option>
+                    
+            </select>
+            </form>
+        </hgroup>
+    </body>
+</html>
