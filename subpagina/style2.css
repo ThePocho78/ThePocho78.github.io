@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::selection{
+    color: rgb(13, 46, 210);
+    background: #d9ec0c;
+}
+
+nav{
+    position: fixed;
+    background: #000000db;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+.pene{
+    background: url('apps.60323.14581193029730121.3bde2745-c5bc-4659-9b31-32749bd5129f.jpg')no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 90%;
+}
+
+.pene::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
