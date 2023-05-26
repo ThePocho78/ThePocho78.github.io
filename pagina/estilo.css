@@ -493,6 +493,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 
   .center-1 .textbox{
     font-size: 130px;
+    margin-top: 260%;
     line-height: 160px;
     margin-left: -10px;
     color: transparent;
