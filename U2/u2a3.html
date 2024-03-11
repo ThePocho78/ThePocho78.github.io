@@ -1,0 +1,173 @@
+<!--
+    Unidad: Parcial No.2
+    Description: Tablas y Formularios
+    Fecha: 01 de Marzo de 2024
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UPSLP - 182667</title>
+</head>
+<body>
+    <h3>Self service</h3>
+    <form class="form-horizontal">
+        <fieldset>
+            <!--Text imput-->
+            <div class="form-group">
+                <label class="col-lg-2 control-label" form="txtUsuario">Nombre</label>
+                <div class="col-lg-6">
+                    <input id="txtUsuario" name="txtUsuario" type="text" class="form-control" placeholder="Nombre">
+                </div>
+            </div>
+            <!--Password imput-->
+            <div class="form-group">
+                <label class="col-lg-2 control-label" form="txtPassword">Password</label>
+                <div class="col-lg-6">
+                    <input id="txtPassword" name="txtPassword" type="password" class="form-control" placeholder="Password">
+                </div>
+            </div>
+            <!--Checkbox-->
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!--button-->
+            <div class="form-group">
+                <label class="col-lg-offset-2 control-label" for="btnAce"></label>
+                <div class="col-lg-10">
+                    <button id="btnAce" name="btnAce" type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Redes Sociales</legend>
+            <a href="www.facebook.com"><img src="fb.png" width="100px"></a>
+            <a href="www.twitter.com"><img src="tw.png" width="100px"></a>
+            <a href="www.instagram.com"><img src="ig.png" width="100px"></a>
+        </fieldset>
+    
+        <form class="form-horizontal">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend>Información de Contacto</legend>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Correo">Correo:</label>  
+              <div class="col-md-5">
+              <input id="Correo" name="Correo" type="text" placeholder="Escribe tu correo" class="form-control input-md">
+              <span class="help-block">@upslp.edu.mx</span>  
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Carrera">UPSLP:</label>  
+              <div class="col-md-5">
+              <input id="Carrera" name="Carrera" type="text" placeholder="Escribe tu carrera" class="form-control input-md">
+                
+              </div>
+            </div>
+            
+            <!-- Multiple Radios -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Whats">Contacto via WhatsApp</label>
+              <div class="col-md-4">
+              <div class="radio">
+                <label for="Whats-0">
+                  <input type="radio" name="Whats" id="Whats-0" value="1" checked="checked">
+                  Si
+                </label>
+                </div>
+              <div class="radio">
+                <label for="Whats-1">
+                  <input type="radio" name="Whats" id="Whats-1" value="2">
+                  No
+                </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Cel">Numero de Celular:</label>  
+              <div class="col-md-5">
+              <input id="Cel" name="Cel" type="text" placeholder="Ej: 44400000" class="form-control input-md">
+                
+              </div>
+            </div>
+            
+            <!-- Multiple Checkboxes -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="checkboxes">Materias:</label>
+              <div class="col-md-4">
+              <div class="checkbox">
+                <label for="checkboxes-0">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                  Quimica
+                </label>
+                </div>
+              <div class="checkbox">
+                <label for="checkboxes-1">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+                  Física
+                </label>
+                </div>
+              <div class="checkbox">
+                <label for="checkboxes-2">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+                  Matematicás
+                </label>
+                </div>
+              <div class="checkbox">
+                <label for="checkboxes-3">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
+                  Ingles
+                </label>
+                </div>
+              <div class="checkbox">
+                <label for="checkboxes-4">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-4" value="5">
+                  Programación
+                </label>
+                </div>
+              <div class="checkbox">
+                <label for="checkboxes-5">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-5" value="6">
+                  Nucleo
+                </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="textarea">Información Personal:</label>
+              <div class="col-md-4">                     
+                <textarea class="form-control" id="textarea" name="textarea"></textarea>
+              </div>
+            </div>
+            
+            <!-- Button (Double) -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="button1id"></label>
+              <div class="col-md-8">
+                <button id="button1id" name="button1id" class="btn btn-success">Enviar</button>
+                <button id="button2id" name="button2id" class="btn btn-danger">Borrar</button>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+            
+    </form>
+    <img src="paty.png" width="400px">
+</body>
+</html>
