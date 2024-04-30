@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Programaci&oacute;n WEB 1</title>
+    </head>
+    <style>
+        
+        .titulo1{
+            text-align: center;
+        }
+        .formulario1{
+            align-items: center;
+            
+        }
+    </style>
+    <body>
+        <h1 class="titulo1">Speaker Subition</h1>
+        <p class="titulo1">Want to speak at our fake conference?<br>Fill out this from</p>
+        <form class="form-horizontal">
+            <fieldset class="formulario1">
+            
+            <!-- Form Name -->
+            <legend>Form Name</legend>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Name">Name</label>  
+              <div class="col-md-5">
+              <input id="Name" name="Name" type="text" placeholder="" class="form-control input-md">
+                
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Email">Email</label>  
+              <div class="col-md-5">
+              <input id="Email" name="Email" type="text" placeholder="you@email.com" class="form-control input-md">
+                
+              </div>
+            </div>
+            
+            <!-- Multiple Radios (inline) -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="radios">Type of Talk</label>
+              <div class="col-md-4"> 
+                <label class="radio-inline" for="radios-0">
+                  <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                  Main Stage
+                </label> 
+                <label class="radio-inline" for="radios-1">
+                  <input type="radio" name="radios" id="radios-1" value="2">
+                  Workshop
+                </label>
+              </div>
+            </div>
+            
+            <!-- Button Drop Down -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="butto">T-Shirt Size</label>
+              <div class="col-md-5">
+                <div class="input-group">
+                  <input id="butto" name="butto" class="form-control" placeholder="--Select--" type="text">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right">
+                      <li><a href="#">Extra Small</a></li>
+                      <li><a href="#">Small</a></li>
+                      <li><a href="#">Medium</a></li>
+                      <li><a href="#">Large</a></li>
+                      <li><a href="#">Extra Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="textarea">Abstract</label>
+              <div class="col-md-4">                     
+                <textarea class="form-control" id="textarea" name="textarea"></textarea>
+              </div>
+            </div>
+            
+            <!-- Multiple Checkboxes -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="checkboxes"></label>
+              <div class="col-md-4">
+              <div class="checkbox">
+                <label for="checkboxes-0">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                  I´m actually available the date of the talk
+                </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="singlebutton"></label>
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+            
+    </body>
+</html>

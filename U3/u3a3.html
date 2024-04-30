@@ -1,0 +1,60 @@
+<!--
+    Unidad: Parcial No.3
+    Description: CSS
+    Fecha: 25 de Abril de 2024
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UPSLP - Programacion web 1</title>
+        <script>
+            //document.body.style.backgroundcolor = "black";
+            console.log(eval('3+5*4-2'));
+            console.log(eval('(3+5)*(4-2)'));
+            console.log(eval('3+(5*4)-2'));
+            console.log(eval('(3+5)*4-2'));
+            console.log(eval('3+5*(4-2)'));
+            //document.body.style.backgroundcolor = 'grey';
+        </script>
+    </head>
+    <body>
+        
+        <script>
+            document.body.style.backgroundColor = 'lightgrey';
+        </script>
+        <h1>Elementos externos</h1>
+        <h3 style="text-align: center;">PUMAS</h3>
+        <p style="text-align: center;">
+        <iframe style="border: 5px dashed rgb(198, 149, 24);" height="700px" width="800px" src="https://pumas.mx/"> --- Cont. de P&aacute;ginas ---</iframe>
+    </p>
+        <h3 style="text-align: center;">CUEVANA</h3>
+        <p style="text-align: center;">
+        <iframe style="border: 5px dashed magenta;" height="700px" width="800px" src="https://ver4.cuevana3cc.me/"></iframe>
+        </p>
+        <ol>
+            <li id="item_5"></li>
+        </ol>
+        <script>
+            document.getElementById("item_1").textContent = 'UPSLP';
+            document.getElementById("item_2").textContent = 'UASLP';
+            document.getElementById("item_3").textContent = 'UVM';
+            document.getElementById("item_4").textContent = 'UCEM';
+            document.getElementById("item_5").textContent = 'UNID';
+        </script>
+        <ul>
+            <li id="item_6"></li>
+            <li id="item_7"></li>
+            <li id="item_8"></li>
+            <li id="item_9"></li>
+        </ul>
+        <script>
+            //Acceso a elementos como un arreglo
+            document.getElementsByTagName('li')[5].textContent = 'PATO';
+            document.getElementsByTagName('li')['item_7'].textContent = 'Rana';
+            //Acceso a elemntos como una referencia
+            document.getElementsByTagName('li').item_8.textContent = 'GATO';
+            //Acceso a elementos con una funcion
+            document.getElementsByTagName('li').item(8).textContent = 'PERRO';
+        </script>
+    </body>
+</html>
