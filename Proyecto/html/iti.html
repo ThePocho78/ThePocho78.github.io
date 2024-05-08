@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Programaci&oacute;n Web I</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="../estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="../estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <style>
+        .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+    </style>
+    <body>
+        <script src="../script/funciones.js"></script>
+        <h1 style="text-align: center; font-weight: bold;">Ingeniería en Tecnologías de la Información (ITI)</h1>
+        <div class="container">
+			<div class="card"><a style="text-decoration: none; color: black;" href="#descripcion" target="_self">Descripci&oacute;n</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#plan" target="_self">Plan de Estudios</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#infra" target="_self">Infraestructura</a></div>
+			<div class="card">Campo de Trabajo</div>
+			<div class="card">Contacto</div>
+		</div><br>
+
+    </body>
+</html>
