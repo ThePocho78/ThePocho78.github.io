@@ -9,6 +9,17 @@
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
+	<style>
+		.columna-izquierda {
+   float: left;
+   width: 50%;
+}
+
+.columna-derecha {
+   float: right;
+   width: 50%;
+}
+	</style>
 	<body>
 		<script src="script/funciones.js"></script>
 		<!-- inicia barra de navegacion -->
@@ -97,9 +108,9 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Oferta Educativa<span class="caret"></span></a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="#" id="p1_11" onclick="muestraArchivo('html/enlaces/2 parcial/u2a2.html');return false;">Ingenier&iacute;a en Sistemas y Tecnolog&iacute;as Industriales (ISTI)</a></li>
+					<li><a href="html/isti.html" id="p1_11" onclick="cargaPractica('html/isti.html');return false;">Ingenier&iacute;a en Sistemas y Tecnolog&iacute;as Industriales (ISTI)</a></li>
 					<li class="divider"></li>
-				    <li><a href="#" id="p1_12" onclick="muestraArchivo('html/enlaces/ejercicio_1-2.html');return false;">Ingenier&iacute;a en Tecnolog&iacute;as de la Informaci&oacute;n (ITI)</a></li>
+				    <li><a href="html/iti.html" id="p1_12" onclick="cargaPractica('html/iti.html');return false;">Ingenier&iacute;a en Tecnolog&iacute;as de la Informaci&oacute;n (ITI)</a></li>
 					<li class="divider"></li>
 					<li><a href="#" id="p1_13" onclick="muestraArchivo('html/p1/ejercicio_1-3.html');return false;">Ingenier&iacute;a en Telem&aacute;tica (ITEM)</a></li>
 					<li class="divider"></li>
@@ -126,6 +137,7 @@
 			<div class="col-sm-8 text-left" id="content" style="height: 800px"> 
 				<!-- Contenido -->
 				<img src="imagenes/constru.png" width="900px" class="img-responsive center-block" alt="Imagen centrada">
+				<h1 style="text-align: center;">HOLA</h1>
 
 			</div>
 			<div class="col-sm-2 sidenav">
@@ -133,8 +145,17 @@
 		  </div>
 		</div>
 		<footer class="container-fluid text-center">
-		  <p>0182667 - Rocha Medina Luis Alfonso</p>
-		  <p>Ingenier&iacute;a en Tecnolog&iacute;as de la Informaci&oacute;n</p>
+		  
+		  <div class="columna-izquierda">
+			<a href="https://www.facebook.com/upslp" target="_blank"><img src="imagenes/Facebook.png" width="20px" alt="Facebook"></a>
+		  <a href="https://twitter.com/UPSLP_MX" target="_blank"><img src="imagenes/twitwer.png" width="20px" alt="twitter"></a>
+		  <a href="https://t.me/upslp_oficial" target="_blank"><img src="imagenes/Telegram.png" width="20px" alt="Telegram"></a>
+		  <a href="https://www.youtube.com/c/UPSLPoficial2001"><img src="imagenes/Youtube.png" width="20px" alt="Youtube"></a>
+		  <a href="https://www.instagram.com/upslp_oficial/?hl=es-la" target="_blank"><img src="imagenes/Instagram.png" width="20px"></a>
+		  <p style="font-weight: bold;">UPSLP</p>
+		  <p style="font-size: small;">Urbano Villal&oacute;n num.500, Col. La Ladrillera, San Luis Potos&iacute;, S.L.P. M&eacute;xico, C.P. 78363 <br>Conmutador: (444) 870 - 21 - 00 Atenci&oacute;n Polit&eacute;cnica: politecnica@upslp.edu.mx</p>
+		  </div>
+		  <div class="columna-derecha">Agregar otra cosa en el futuro</div>
 		</footer>
 	</body>
 </html>
