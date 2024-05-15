@@ -39,9 +39,7 @@
         overflow: hidden; 
       }
 
-      summary {
-        display: block; 
-      }
+      
 
       input {
         display: none; 
@@ -81,81 +79,39 @@
       details:has(input:checked) {
         max-height: 1200px; 
       }
-	  .slider-container{
-		width: 100%;
-		margin: auto;
-		overflow: hidden;
-		position: relative;
-	  }
-	  .slider{
-		display: flex;
-		transition: transform 1s ease-in-out;
-	  }
-	  .slide{
-		min-width: 100%;
-		transition: transform 1s ease-in-out, width 1s ease-in-out;
-	  }
-	  .dot-container{
-		z-index: 5;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: 1.5em;
-		text-align: center;
-		background-color: rgb(0, 0, 0, 0.3);
-		padding: 5px;
-		border-radius: 20px;
-	  }
-	  .dot{
-		height: 15px;
-		width: 15px;
-		margin: 0 5px;
-		background-color: #bbb;
-		border-radius: 50%;
-		display: inline-block;
-		transition: background-color 0.6s ease;
-		cursor: pointer;
-	  }
-	  .active-dot{
-		background-color: white;
-	  }
+	  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+  }
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  
+
     </style>
 	<body>
 		<script src="../script/funciones.js">
-			let currentIndex = 0;
-			const slides = document.querySelectorAll('.slide');
-			const dots = document.querySelectorAll('.dot');
-			const totalSlides = slides.length;
 
-			function showSlide(index){
-				if(index < 0){
-					currentIndex = totalSlides - 1;
-				}else if(index >= totalSlides){
-					currentIndex = 0;
-				}else{
-					currentIndex = index;
-				}
-				slides.forEach((slide, i) => {
-					const isCurrent = i === currentIndex;
-					const scaleFactor = isCurrent ? 1 : 0.8;
-					const transformValue = isCurrent ? 'scale(1)':'scale(0.8)';
-					const widthValue = isCurrent ? '100%': '80%';
-
-					slide.style.transform = transformValue;
-                    slide.style.width = widthValue;
-					dots[i].classList.toggle('active-dot', isCurrent);
-				});
-				const translateValue = -currentIndex * 100 + '%';
-				document.querySelector('.slider').style.transform = 'translateX(' + translateValue +')';
-			}
 		</script>
 		<h1 style="text-align: center; font-weight: bold;">Ingeniería en Sistemas y Tecnologías Industriales (ISTI)</h1>
 		<div class="container">
 			<div class="card"><a style="text-decoration: none; color: black;" href="#descripcion" target="_self">Descripci&oacute;n</a></div>
 			<div class="card"><a style="text-decoration: none; color: black;" href="#plan" target="_self">Plan de Estudios</a></div>
 			<div class="card"><a style="text-decoration: none; color: black;" href="#infra" target="_self">Infraestructura</a></div>
-			<div class="card">Campo de Trabajo</div>
-			<div class="card">Contacto</div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#campo" target="_self">Campo de Trabajo</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#cont" target="_self">Contacto</a></div>
 		</div><br>
 		<img src="../imagenes/isti.png" width="100%">
 		<a href="https://www.google.com.mx/maps/@22.1233552,-100.9851485,3a,90y,357.27h,85.07t/data=!3m6!1e1!3m4!1sAF1QipMSVgNCC2j0VOF3JMYkGU9cj3qlcy6rcgKsKP1r!2e10!7i8000!8i4000?shorturl=1" target="_blank"><img src="../imagenes/360isti.png" style="margin-top: 3px;" width="100%"></a>
@@ -166,6 +122,7 @@
 		<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Duraci&oacute;n</h3>
 		<p>9 semestres</p>
 	</div>
+	
 	<div class="columna-derecha"><img src="../imagenes/isti3.png" width="90%"></div><br>
 		<div class="columna-izquierda"><br><br><br><h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="descripcion">Descripci&oacute;n carrera:</h3></div>
 		<p>En Ingeniería en Sistemas y Tecnologías Industriales se busca preparar a los alumnos en las 5 grandes áreas que comprende la Ingeniería Industrial como lo son: Producción, Calidad, Suministros de Materiales, Productividad y Seguridad, todo bajo un enfoque sistémico y pertinente, con la transmisión del conocimiento más actual en razón de metodologías, herramientas y software aplicable a los procesos de producción y de servicios. Además de la tecnología, busca que los alumnos se preparen para administrar y dirigir al personal.</p>
@@ -186,18 +143,52 @@
 			  <img src="../imagenes/isti4.png" width="100%" alt=""/>
 			</div>
 		  </details><br>
-		  <h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="infra">Infraestructura / Recursos:</h3>
-		  <div class="slider-container">
-			<div class="slider">
-				<div class="slide"><img src="../imagenes/isti5.png"></div>
-				<div class="slide"><img src="../imagenes/isti6.png"></div>
-				<div class="slide"><img src="../imagenes/isti7.png"></div>
-			</div>
-			<div class="dot-container">
-				<span class="dot" onclick="currentSlide(0)"></span>
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-			</div>
-		  </div>
+		  <img src="../imagenes/azul.png" width="100%" height="10px">
+		  <h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="infra">Infraestructura / Recursos:</h3><br>
+		 <a href="laboisti.html" style="color: chocolate;"><h2 style="color: #cb5115; font-weight: bold; font-size: 35px; text-align: center;">LABORATORIOS ISTI</h2></a>
+		 <img src="../imagenes/istilabo.png" width="100%" height="600px" style="border-radius: 20px;">
+		 <img src="../imagenes/azul.png" width="100%" height="10px">
+		 <br><h3 style="color: rgb(3, 3, 172); font-weight: bold;">Certificaciones:</h3>
+		 <ul style="background-color: #4d9dc0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px; color: black;">
+			<li>Auditor Interno ISO/TS 16949 (Automotive Industry Action Group)</li>
+			<li>Core Tools (Automotive Industry Action Group)</li>
+			<li>Auditor Interno ISO 14000 e ISO 18000 (STPS)</li>
+			<li>Lean Practitioner  (IIE)</li>
+			<li>Green Belts Six Sigma (STPS)</li>
+			<li>Cursos SAP y MINITAB</li>
+		</ul>
+		<center><img src="../imagenes/isti8.png" width="50%"></center>
+		<img src="../imagenes/azul.png" width="100%" height="10px">
+		<br><h3 style="color: rgb(3, 3, 172); font-weight: bold;">Logros / Distinciones:</h3>
+		 <ul style="background-color: #c09c4d; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px; color: black;">
+			<li>1er lugar Nacional de ensayo técnico por parte de la Región México del Institute of Industrial Engineers (IIE) en Cd. Madero, Tamps. y en SLP (2014 y 2015))</li>
+			<li>3er. Lugar en la Competencia Internacional de ensayo técnico por parte del Institute of Industrial Engineers (IIE) en Montreal, Canadá. 2014</li>
+			<li>2do. Lugar en la Competencia Internacional de ensayo sobre Manufactura Esbelta por parte del Institute of Industrial Engineers (IIE) en Nashville, Tenn. USA 2015</li>
+			<li>1er. Lugar Nacional y 8vo. Internacional en Excel 2013 en Dallas, Tx. USA, competencia organizada por Microsoft en casi 125 países.</li>
+			<li style="text-decoration-style: double;"> 3 Premios Nacionales de CENEVAL por alto desempeño en el examen de egreso de Ing. Industrial.</li>
+			<li>7 medallas a estudiantes ejemplares otorgadas por la asociación Trayectoria de Éxito.</li>
+		</ul>
+		<center><img src="../imagenes/isti9.png" width="50%"></center>
+		<img src="../imagenes/azul.png" width="100%" height="10px">
+		<br><h3 style="color: rgb(3, 3, 172); font-weight: bold;">Perfil de egreso:</h3>
+		<p>El egresado de la carrera de ISTI diseña, implanta, administra y mejora, tanto los procesos y sistemas de producción de una industria, como las funciones de apoyo tales como Planeación, Logística, Compras, Calidad, Mantenimiento, entre otras.</p>
+		<img src="../imagenes/azul.png" width="100%" height="10px">
+		<br><h3 id="campo" style="color: rgb(3, 3, 172); font-weight: bold;">Campo de trabajo:</h3>
+		<p>Un ISTI tiene la posibilidad de desarrollarse en industrias dedicadas tanto a la transformación como a los servicios, siempre buscando la mejora. Por lo anterior puede contratarse en:</p>
+		<center><img src="../imagenes/istis.jpg" width="80%"></center><br>
+		<center><img src="../imagenes/istis1.jpg" width="80%"></center>
+		<img src="../imagenes/azul.png" width="100%" height="10px">
+		<center><iframe width="560" height="315" src="https://www.youtube.com/embed/7RxDWoTyRes?si=dpMJzJpzQWI69yYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+		<img src="../imagenes/azul.png" width="100%" height="10px">
+		<br><h3 style="color: rgb(3, 3, 172); font-weight: bold; text-align: center;" id="cont">Contacto</h3><br>
+		<p style="text-align: center; font-weight: bold; color: black;">Ingeniería en Sistemas y Tecnologías Industriales (ISTI)</p>
+		<p style="text-align: center; font-weight: bold; color: black;">Ing. Janett Mariely Zarate</p>
+		<p style="text-align: center;">Asistente de Ingeniería en Sistemas y Tecnologías Industriales</p>
+		<p style="text-align: center;">Teléfono: (444) 870 – 21 – 00 Ext. 225</p>
+		<p style="text-align: center; font-weight: bold; color: black;">Dra. Patricia Castillo Galvan</p>
+		<p style="text-align: center;">Coordinador de Ing. en Sistemas y Tecnologías Industriales</p>
+		<p style="text-align: center;">isti@upslp.edu.mx</p>
+		<a href="#" class="back-to-top">↑</a>
+
 	</body>
 </html>
