@@ -41,3 +41,10 @@ html{
   float: right;
   width: 50%;
 }
+.img-1{
+  box-shadow: 1px 1px 20px blue; 
+  }
+
+  .img-2{
+    box-shadow: 1px 1px 20px rgb(199, 156, 2); 
+    }
