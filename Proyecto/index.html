@@ -39,15 +39,15 @@
 			  <ul class="nav navbar-nav">
 				<!-- 1er elemento del menú -->
 				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Aspirantes<span class="caret"></span></a>
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Universidad<span class="caret"></span></a>
 				  <ul class="dropdown-menu" role="menu">
+					<li><a href="html/nuestra.html" id="pag_0" onclick="cargaPractica('html/nuestra.html');return false;">Nuestra Universidad</a></li>
 					<li><a href="html/oferta.html" id="pag_1" onclick="cargaPractica('html/oferta.html');return false;">Oferta Educativa</a></li>
 					<li><a href="html/pros.html" id="pag_2" onclick="cargaPractica('html/pros.html');return false;">Proceso de Ingreso</a></li>
 					<li class="divider"></li>
-					<li><a href="#" id="pag_4" onclick="cargaPractica('html/Aspirantes.html');return false;">Preguntas Frecuentes</a></li>
+					<li><a href="html/preg.html" id="pag_4" onclick="cargaPractica('html/preg.html');return false;">Preguntas Frecuentes</a></li>
 					<li class="divider"></li>
-					<li><a href="#" id="pag_6" onclick="cargaPractica('html/Aspirantes.html');return false;">Sesiones Informativas</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Aspirantes.html');return false;">M&aacute;s Informaci&oacute;n</a></li>
+					<li><a href="html/more.html" id="pag_7" onclick="cargaPractica('html/more.html');return false;">M&aacute;s Informaci&oacute;n</a></li>
 				  </ul>
 				</li>
 				<!-- 2er elemento del menú -->
@@ -56,16 +56,14 @@
 				  <ul class="dropdown-menu" role="menu">
 					<li><a href="html/self.html" id="pag_7" onclick="cargaPractica('html/self.html');return false;">Self-Service</a></li>
 					<li><a href="html/blackboard.html" id="pag_7" onclick="cargaPractica('html/blackboard.html');return false;">Blackboard</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Alumnos.html');return false;">Biblioteca</a></li>
+					<li><a href="http://200.94.105.36/SIABUC_UPSLP/Home/BusquedaAvanzada" id="pag_7" onclick="muestraArchivo('http://200.94.105.36/SIABUC_UPSLP/Home/BusquedaAvanzada');return false;">Biblioteca</a></li>
 					<li class="divider"></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Alumnos.html');return false;">CADI</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Alumnos.html');return false;">Preguntas frecuentes</a></li>
+					<li><a target="_blank" href="https://www.upslp.edu.mx/upslp/wp-content/uploads/2024/01/Manual-para-reservar-CADI-Prim2024.pdf" id="pag_7" onclick="muestraArchivo('html/Alumnos.html');return false;">CADI</a></li>
+					<li><a href="html/preg.html" id="pag_7" onclick="cargaPractica('html/preg.html');return false;">Preguntas frecuentes</a></li>
 					<li><a href="#" id="pag_7" onclick="cargaPractica('archivos/Calendario-Escolar-2023-2024.pdf');return false;">Calendario Escolar</a></li>
 					<li class="divider"></li>
 					<li><a href="https://www.microsoft.com/es-mx/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" id="pag_7" onclick="muestraArchivo('');return false;" target="_blank">Correo Electr&oacute;nico</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Alumnos.html');return false;">Deporte y Cultura</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Alumnos.html');return false;">Reglamentos</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Alumnos.html');return false;">Reservaciones Hibridas</a></li>
+					<li><a href="html/reg.html" id="pag_7" onclick="cargaPractica('html/reg.html');return false;">Reglamentos</a></li>
 				  </ul>
 				</li>
 				<!-- 3er elemento del menú -->
@@ -77,29 +75,16 @@
 					<li><a href="html/self.html" id="pag_8" onclick="cargaPractica('html/self.html');return false;">Self-Service</a></li>					<li><a href="https://www.microsoft.com/es-mx/microsoft-teams/log-in" id="pag_9" target="_blank">Microsoft Teams</a></li>
 					<li><a href="html/blackboard.html" id="pag_10" onclick="cargaPractica('html/blackboard.html');return false;">Blackboard</a></li>
 					<li class="divider"></li>
-					<li><a href="archivos/Calendario-Escolar-2023-2024.pdf" id="pag_11" onclick="muestraArchivo('');return false;" target="_blank">Calendario Escolar</a></li>
-					<li><a href="archivos/1-Calendario-captura-Primavera-2024_veda.pdf" id="pag_12" onclick="muestraArchivo('');return false;" target="_blank">Calendario de Calificaciones</a></li>
-					<li><a href="archivos/Calendario-de-Tutoria-Otono-2023.pdf" id="pag_13" onclick="muestraArchivo('');return false;" target="_blank">Calendario de Tutorias</a></li>
+					<li><a href="archivos/Calendario-Escolar-2023-2024.pdf" id="pag_11" onclick="cargaPractica('archivos/Calendario-Escolar-2023-2024.pdf');return false;" target="_blank">Calendario Escolar</a></li>
+					<li><a href="archivos/1-Calendario-captura-Primavera-2024_veda.pdf" id="pag_12" onclick="cargaPractica('archivos/1-Calendario-captura-Primavera-2024_veda.pdf');return false;" target="_blank">Calendario de Calificaciones</a></li>
+					<li><a href="archivos/Calendario-de-Tutoria-Otono-2023.pdf" id="pag_13" onclick="cargaPractica('archivos/Calendario-de-Tutoria-Otono-2023.pdf');return false;" target="_blank">Calendario de Tutorias</a></li>
 					<li class="divider"></li>
-					<li><a href="#" id="pag_15" onclick="cargaPractica('html/docentes.html');return false;">Reporteador</a></li>
+					<li><a href="html/repor.html" id="pag_15" onclick="cargaPractica('html/repor.html');return false;">Reporteador</a></li>
 					<li class="divider"></li>
-					<li><a href="#" id="pag_16" onclick="cargaPractica('html/docentes.html');return false;">Preguntas frecuentes</a></li>
+					<li><a href="html/preg.html" id="pag_16" onclick="cargaPractica('html/preg.html');return false;">Preguntas frecuentes</a></li>
 				  </ul>
 				</li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrativos<span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu">
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Administrativos.html');return false;">Intranet</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Administrativos.html');return false;">Correo Electr&oacute;nico</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Administrativos.html');return false;">Calendario Escolar</a></li>
-					<li class="divider"></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Administrativos.html');return false;">Biblioteca</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Administrativos.html');return false;">Deporte y Cultura</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Administrativos.html');return false;">Reglamento</a></li>
-					<li class="divider"></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('html/Administrativos.html');return false;">Comit&eacute; de &Eacute;tica</a></li>
-				  </ul>
-				</li>
+				
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Oferta Educativa<span class="caret"></span></a>
 				<ul class="dropdown-menu" role="menu">
@@ -107,16 +92,23 @@
 					<li class="divider"></li>
 				    <li><a href="html/iti.html" id="p1_12" onclick="cargaPractica('html/iti.html');return false;">Ingenier&iacute;a en Tecnolog&iacute;as de la Informaci&oacute;n (ITI)</a></li>
 					<li class="divider"></li>
-					<li><a href="#" id="p1_13" onclick="muestraArchivo('html/p1/ejercicio_1-3.html');return false;">Ingenier&iacute;a en Telem&aacute;tica (ITEM)</a></li>
+					<li><a href="html/item.html" id="p1_13" onclick="cargaPractica('html/item.html');return false;">Ingenier&iacute;a en Telem&aacute;tica (ITEM)</a></li>
 					<li class="divider"></li>
-					<li><a href="#" id="p1_13" onclick="muestraArchivo('html/p1/ejercicio_1-3.html');return false;">Ingenier&iacute;a en Tecnolog&iacute;as de Manufactura (ITMA)</a></li>
+					<li><a href="html/itma.html" id="p1_13" onclick="cargaPractica('html/itma.html');return false;">Ingenier&iacute;a en Tecnolog&iacute;as de Manufactura (ITMA)</a></li>
 					<li class="divider"></li>
-				    <li><a href="#" id="p1_13" onclick="muestraArchivo('html/p1/ejercicio_1-3.html');return false;">Licenciatura en Mercadotecnia Internacional (LMI)</a></li>
-					<li class="divider"></li>
-				    <li><a href="#" id="p1_13" onclick="muestraArchivo('html/p1/ejercicio_1-3.html');return false;">Licenciatura en Administraci&oacute;n y Gesti&oacute;n (LAG)</a></li>
-				
+				    <li><a href="html/lmi.html" id="p1_13" onclick="cargaPractica('html/lmi.html');return false;">Licenciatura en Mercadotecnia Internacional (LMI)</a></li>
 				</ul>
 				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ayuda<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="html/formulario/index.html" id="pag_7" onclick="cargaPractica('html/formulario/index.html');return false;">Contacto</a></li>
+					  <li class="divider"></li>
+					  <li><a href="https://www.microsoft.com/es-mx/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" id="pag_7" onclick="muestraArchivo('');return false;" target="_blank">Correo Electr&oacute;nico</a></li>
+					  <li class="divider"></li>
+					  <li><a href="html/chat.html" id="pag_7" onclick="cargaPractica('html/chat.html');return false;">Chat Bot</a></li>
+					</ul>
+				  </li>
 			  </ul>
 			  <ul class="nav navbar-nav navbar-right">
 				<li><a href="#">Ene - Jun 24</a></li>
@@ -150,7 +142,8 @@
 		  <p style="font-size: small;">Urbano Villal&oacute;n num.500, Col. La Ladrillera, San Luis Potos&iacute;, S.L.P. M&eacute;xico, C.P. 78363 <br>Conmutador: (444) 870 - 21 - 00 Atenci&oacute;n Polit&eacute;cnica: politecnica@upslp.edu.mx</p>
 		  </div>
 		  <div class="columna-derecha">
-			<a href="index.html" target="_self" style="text-decoration: none; color: rgb(255, 255, 255);">UNIVERSIDAD</a>
+			<a href="index.html" target="_self" style="text-decoration: none; color: rgb(255, 255, 255);">UNIVERSIDAD</a><br>
+			<a href="https://www.google.com/maps/place/Universidad+Polit%C3%A9cnica+de+San+Luis+Potos%C3%AD/@22.1223377,-100.9842534,15z/data=!4m6!3m5!1s0x842a9f5412c6b56f:0xe1b3dea4c6aa1c03!8m2!3d22.1223377!4d-100.9842534!16s%2Fm%2F04y9g6q?entry=ttu" target="_blank" style="text-decoration: none; color: rgb(255, 255, 255);">UBICACI&Oacute;N</a>
 		  </div>
 		</footer>
 	</body>
